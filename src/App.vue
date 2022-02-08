@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="app__container">
+      <h1 class="app__title">
+        Image Uploader
+      </h1>
+      <ImageUploader
+        :input-text="'Select images'"
+        :send-text="'Upload Images'" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import ImageUploader from '@/components/ImageUploader.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    ImageUploader,
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+
+.app__container {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.app__title {
+  font-weight: 300;
+  font-size: 24px;
 }
 </style>
