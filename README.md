@@ -1,24 +1,18 @@
-# image-upload
+# Image Uploader
 
-## Project setup
-```
-npm install
-```
+- Vue
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Features
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Загрузка одного или нескольких изображений
+- Предпросмотр в модальном окне
+- Удаление загруженного изображения
+- Изменение порядка изображений
 
-### Lints and fixes files
+## Installation
+```sh
+git clone
+npm i
+npm run serve / npm run build
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![alt text](https://github.com/dmchinenov/image-uploader/blob/master/src/assets/screen-readme.jpg)
