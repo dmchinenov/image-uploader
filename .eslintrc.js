@@ -15,6 +15,7 @@ module.exports = {
       'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
       'linebreak-style': 0,
       'no-plusplus': 0,
+      "no-param-reassign": 0,
       'vue/order-in-components': ['error', {
         order: [
           'data',
