@@ -33,7 +33,6 @@ export default {
   padding: 10px;
   min-width: 200px;
   height: 50px;
-  background: none;
   background: $onyx;
   color: white;
   cursor: pointer;
