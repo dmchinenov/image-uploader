@@ -5,6 +5,7 @@
         Image Uploader
       </h1>
       <ImageUploader
+        multiple
         :input-text="'Select images'"
         :send-text="'Upload Images'" />
     </div>
@@ -25,9 +26,7 @@ export default {
 <style lang="scss">
 
 .app__container {
-  width: 100%;
   height: 100vh;
-  background: white;
   display: flex;
   flex-direction: column;
   justify-content: center;

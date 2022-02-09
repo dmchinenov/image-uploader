@@ -16,7 +16,7 @@
         <input
           ref="input"
           class="form__input"
-          multiple
+          :multiple="multiple"
           :disabled="disabled"
           accept=".jpg, .jpeg, .png"
           type="file"
@@ -81,6 +81,10 @@ export default {
       type: String,
       default: 'Upload',
     },
+    multiple: {
+      type: Boolean,
+      default: false,
+    },
   },
   data: () => ({
     images: [],
@@ -94,7 +98,6 @@ export default {
     },
     uploadFiles() {
       const imageFiles = Object.values(this.$refs.input.files);
-      console.log(imageFiles);
       imageFiles.forEach((item) => {
         const reader = new FileReader();
         reader.onload = (image) => {
@@ -142,7 +145,6 @@ export default {
 .form {
   border: 1px solid $onyx;
   padding: 50px;
-  max-width: 800px;
   display: flex;
   align-items: center;
   flex-direction: column;
