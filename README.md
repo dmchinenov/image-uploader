@@ -8,7 +8,9 @@
 - Предпросмотр в модальном окне
 - Удаление загруженного изображения
 - Изменение порядка изображений
+## Demo
 
+https://dmchinenov.github.io/image-uploader/
 ## Installation
 ```sh
 git clone
